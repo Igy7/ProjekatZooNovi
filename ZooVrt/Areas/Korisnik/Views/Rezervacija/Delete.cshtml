@@ -1,0 +1,56 @@
+﻿@model ZooVrt.Entities.Rezervacija
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Rezervacija</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.korisnickoIme)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.korisnickoIme)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dogadjaj)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dogadjaj)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.termin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.termin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.brRezervisanihKarata)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.brRezervisanihKarata)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

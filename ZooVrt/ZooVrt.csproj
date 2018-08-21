@@ -195,6 +195,9 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\Korisnik\Controllers\DogadjajController.cs" />
+    <Compile Include="Areas\Korisnik\Controllers\RezervacijaController.cs" />
+    <Compile Include="Areas\Korisnik\KorisnikAreaRegistration.cs" />
     <Compile Include="Areas\Radnik\Controllers\DogadjajController.cs" />
     <Compile Include="Areas\Radnik\Controllers\RezervacijaController.cs" />
     <Compile Include="Areas\Radnik\Controllers\TerminController.cs" />
@@ -250,6 +253,19 @@
     <Content Include="Areas\Radnik\Views\Rezervacija\Edit.cshtml" />
     <Content Include="Areas\Radnik\Views\Rezervacija\Index.cshtml" />
     <Content Include="Areas\Radnik\Views\Shared\_BackToListButtonPartial.cshtml" />
+    <Content Include="Areas\Korisnik\Views\web.config" />
+    <Content Include="Areas\Korisnik\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Korisnik\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Korisnik\Views\Dogadjaj\Create.cshtml" />
+    <Content Include="Areas\Korisnik\Views\Dogadjaj\Delete.cshtml" />
+    <Content Include="Areas\Korisnik\Views\Dogadjaj\Details.cshtml" />
+    <Content Include="Areas\Korisnik\Views\Dogadjaj\Edit.cshtml" />
+    <Content Include="Areas\Korisnik\Views\Dogadjaj\Index.cshtml" />
+    <Content Include="Areas\Korisnik\Views\Rezervacija\Create.cshtml" />
+    <Content Include="Areas\Korisnik\Views\Rezervacija\Delete.cshtml" />
+    <Content Include="Areas\Korisnik\Views\Rezervacija\Details.cshtml" />
+    <Content Include="Areas\Korisnik\Views\Rezervacija\Edit.cshtml" />
+    <Content Include="Areas\Korisnik\Views\Rezervacija\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -303,6 +319,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Korisnik\Models\" />
     <Folder Include="Areas\Radnik\Models\" />
   </ItemGroup>
   <ItemGroup>
