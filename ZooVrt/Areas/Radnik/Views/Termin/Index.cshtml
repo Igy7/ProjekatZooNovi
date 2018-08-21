@@ -1,0 +1,45 @@
+﻿@model IEnumerable<ZooVrt.Entities.Termin>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.vremePocetka)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.vremeKraja)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.brKarata)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.vremePocetka)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vremeKraja)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.brKarata)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.terminID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.terminID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.terminID })
+        </td>
+    </tr>
+}
+
+</table>

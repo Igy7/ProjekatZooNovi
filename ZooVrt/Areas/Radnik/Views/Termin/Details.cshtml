@@ -1,0 +1,42 @@
+﻿@model ZooVrt.Entities.Termin
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Termin</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.vremePocetka)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vremePocetka)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vremeKraja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vremeKraja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.brKarata)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.brKarata)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.terminID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

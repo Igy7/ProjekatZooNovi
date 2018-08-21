@@ -1,0 +1,50 @@
+﻿@model ZooVrt.Entities.Rezervacija
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Rezervacija</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.korisnickoIme)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.korisnickoIme)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dogadjaj)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dogadjaj)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.termin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.termin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.brRezervisanihKarata)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.brRezervisanihKarata)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.rezervacijaID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

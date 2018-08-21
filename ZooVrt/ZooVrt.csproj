@@ -195,6 +195,9 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\Radnik\Controllers\DogadjajController.cs" />
+    <Compile Include="Areas\Radnik\Controllers\RezervacijaController.cs" />
+    <Compile Include="Areas\Radnik\Controllers\TerminController.cs" />
     <Compile Include="Areas\Radnik\RadnikAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -226,9 +229,27 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Areas\Radnik\Views\web.config" />
     <Content Include="Areas\Radnik\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Radnik\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Radnik\Views\Dogadjaj\Create.cshtml" />
+    <Content Include="Areas\Radnik\Views\Dogadjaj\Delete.cshtml" />
+    <Content Include="Areas\Radnik\Views\Dogadjaj\Details.cshtml" />
+    <Content Include="Areas\Radnik\Views\Dogadjaj\Edit.cshtml" />
+    <Content Include="Areas\Radnik\Views\Dogadjaj\Index.cshtml" />
+    <Content Include="Areas\Radnik\Views\Termin\Create.cshtml" />
+    <Content Include="Areas\Radnik\Views\Termin\Delete.cshtml" />
+    <Content Include="Areas\Radnik\Views\Termin\Details.cshtml" />
+    <Content Include="Areas\Radnik\Views\Termin\Edit.cshtml" />
+    <Content Include="Areas\Radnik\Views\Termin\Index.cshtml" />
+    <Content Include="Areas\Radnik\Views\Rezervacija\Create.cshtml" />
+    <Content Include="Areas\Radnik\Views\Rezervacija\Delete.cshtml" />
+    <Content Include="Areas\Radnik\Views\Rezervacija\Details.cshtml" />
+    <Content Include="Areas\Radnik\Views\Rezervacija\Edit.cshtml" />
+    <Content Include="Areas\Radnik\Views\Rezervacija\Index.cshtml" />
+    <Content Include="Areas\Radnik\Views\Shared\_BackToListButtonPartial.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -237,6 +258,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\KorisnikMenu.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\RadnikMenu.js" />
     <Content Include="Scripts\respond.js" />
@@ -277,10 +299,10 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_RadnikMenuPartial.cshtml" />
+    <Content Include="Views\Shared\_KorisnikMenuPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Radnik\Controllers\" />
     <Folder Include="Areas\Radnik\Models\" />
   </ItemGroup>
   <ItemGroup>

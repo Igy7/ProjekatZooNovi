@@ -25,6 +25,7 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     @Html.Partial("_RadnikMenuPartial")
+                    @Html.Partial("_KorisnikMenuPartial")
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -41,6 +42,7 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/radnik")
+    @Scripts.Render("~/bundles/korisnik")
     @RenderSection("scripts", required: false)
 </body>
 </html>
