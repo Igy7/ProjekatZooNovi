@@ -266,6 +266,8 @@
     <Content Include="Areas\Korisnik\Views\Rezervacija\Details.cshtml" />
     <Content Include="Areas\Korisnik\Views\Rezervacija\Edit.cshtml" />
     <Content Include="Areas\Korisnik\Views\Rezervacija\Index.cshtml" />
+    <Content Include="Areas\Korisnik\Views\Shared\_NapraviRezervacijuPartial.cshtml" />
+    <Content Include="Areas\Korisnik\Views\Shared\_DetaljiODogadjajuPartial.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
