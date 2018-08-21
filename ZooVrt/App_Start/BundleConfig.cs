@@ -28,6 +28,8 @@ namespace ZooVrt
                       "~/Content/site.css"));
             bundles.Add(new ScriptBundle("~/bundles/radnik").Include(
                       "~/Scripts/RadnikMenu.js"));
+            bundles.Add(new ScriptBundle("~/bundles/korisnik").Include(
+          "~/Scripts/KorisnikMenu.js"));
         }
     }
 }
