@@ -4,24 +4,21 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Dogadjaji</h2>
-<br/>
+<h2>Index</h2>
 
 <p>
-    <div>
-        @Html.Partial("_NapraviRezervacijuPartial")
-    </div>
+    @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            Naziv dogadjaja
+            @Html.DisplayNameFor(model => model.naziv)
         </th>
         <th>
-            Datum odrzavanja
+            @Html.DisplayNameFor(model => model.datum)
         </th>
-        <th>            
-            Cena karte
+        <th>
+            @Html.DisplayNameFor(model => model.cenaKarte)
         </th>
         <th></th>
     </tr>
@@ -37,10 +34,11 @@
         <td>
             @Html.DisplayFor(modelItem => item.cenaKarte)
         </td>
-        <td>            
-            @Html.Partial("_DetaljiODogadjajuPartial", item.dogadjajId)
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.dogadjajId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.dogadjajId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.dogadjajId })
         </td>
-       
     </tr>
 }
 

@@ -267,15 +267,10 @@
     <Content Include="Areas\Korisnik\Views\Rezervacija\Details.cshtml" />
     <Content Include="Areas\Korisnik\Views\Rezervacija\Edit.cshtml" />
     <Content Include="Areas\Korisnik\Views\Rezervacija\Index.cshtml" />
-<<<<<<< HEAD
-    <Content Include="Areas\Korisnik\Views\Shared\_NapraviRezervacijuPartial.cshtml" />
-    <Content Include="Areas\Korisnik\Views\Shared\_DetaljiODogadjajuPartial.cshtml" />
-=======
     <Content Include="Areas\Radnik\Views\Shared\_EditButtonPartial.cshtml" />
     <Content Include="Areas\Radnik\Views\Shared\_CreateButtonPartial.cshtml" />
     <Content Include="Areas\Radnik\Views\Shared\_SmallButtonPartial.cshtml" />
     <Content Include="Areas\Radnik\Views\Shared\_TableButtonsPartial.cshtml" />
->>>>>>> d9d1298860444547a30106e4b4a6446a6c2ec3c0
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
