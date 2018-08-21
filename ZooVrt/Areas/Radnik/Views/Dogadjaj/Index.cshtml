@@ -28,13 +28,13 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            Naziv
+            @Html.DisplayFor(modelItem => item.naziv)
         </td>
         <td>
-            Datum
+            @Html.DisplayFor(modelItem => item.datum)
         </td>
         <td>
-            Cena karte
+            @Html.DisplayFor(modelItem => item.cenaKarte)
         </td>       
             @Html.Partial("_TableButtonsPartial", new SmallButtonModel { dogadjajId = item.dogadjajId })
     </tr>
