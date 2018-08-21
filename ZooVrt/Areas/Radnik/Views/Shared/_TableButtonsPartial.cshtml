@@ -1,0 +1,44 @@
+﻿@model ZooVrt.Areas.Radnik.Models.SmallButtonModel
+@using ZooVrt.Areas.Radnik.Models;
+
+<td style="width:120px;">
+    <div class="btn-group" role="group">
+        @Html.Partial("_SmallButtonPartial",
+        new SmallButtonModel
+        {
+            Action = "Edit",
+            ButtonType = "btn-primary",
+            Glyph = "pencil",
+            Text = "Edit button",
+            dogadjajId = Model.dogadjajId,
+            terminId = Model.terminId,
+            rezervacijaId = Model.rezervacijaId
+
+        })
+
+            @Html.Partial("_SmallButtonPartial",
+                 new SmallButtonModel
+                 {
+                     Action = "Details",
+                     ButtonType = "btn-success",
+                     Glyph = "list",
+                     Text = "Detail button",
+                     dogadjajId = Model.dogadjajId,
+                     terminId = Model.terminId,
+                     rezervacijaId = Model.rezervacijaId
+                 })
+        
+        @Html.Partial("_SmallButtonPartial",
+        new SmallButtonModel
+        {
+            Action = "Delete",
+            ButtonType = "btn-danger",
+            Glyph = "trash",
+            Text = "Delete button",
+            dogadjajId = Model.dogadjajId,
+            terminId = Model.terminId,
+            rezervacijaId = Model.rezervacijaId
+        })
+    </div>
+</td>
+

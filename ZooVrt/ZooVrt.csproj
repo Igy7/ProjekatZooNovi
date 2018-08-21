@@ -201,6 +201,7 @@
     <Compile Include="Areas\Radnik\Controllers\DogadjajController.cs" />
     <Compile Include="Areas\Radnik\Controllers\RezervacijaController.cs" />
     <Compile Include="Areas\Radnik\Controllers\TerminController.cs" />
+    <Compile Include="Areas\Radnik\Models\SmallButtonModel.cs" />
     <Compile Include="Areas\Radnik\RadnikAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -266,6 +267,10 @@
     <Content Include="Areas\Korisnik\Views\Rezervacija\Details.cshtml" />
     <Content Include="Areas\Korisnik\Views\Rezervacija\Edit.cshtml" />
     <Content Include="Areas\Korisnik\Views\Rezervacija\Index.cshtml" />
+    <Content Include="Areas\Radnik\Views\Shared\_EditButtonPartial.cshtml" />
+    <Content Include="Areas\Radnik\Views\Shared\_CreateButtonPartial.cshtml" />
+    <Content Include="Areas\Radnik\Views\Shared\_SmallButtonPartial.cshtml" />
+    <Content Include="Areas\Radnik\Views\Shared\_TableButtonsPartial.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -320,7 +325,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Korisnik\Models\" />
-    <Folder Include="Areas\Radnik\Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

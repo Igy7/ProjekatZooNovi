@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<ZooVrt.Entities.Dogadjaj>
+@using ZooVrt.Areas.Radnik.Models;
 
 @{
     ViewBag.Title = "Index";
@@ -7,10 +8,11 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.Partial("_CreateButtonPartial")
 </p>
-<table class="table">
-    <tr>
+
+<table class="table table-striped">
+    <tr class="success">
         <th>
             @Html.DisplayNameFor(model => model.naziv)
         </th>
@@ -26,19 +28,15 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.naziv)
+            Naziv
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.datum)
+            Datum
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.cenaKarte)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.dogadjajId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.dogadjajId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.dogadjajId })
-        </td>
+            Cena karte
+        </td>       
+            @Html.Partial("_TableButtonsPartial", new SmallButtonModel { dogadjajId = item.dogadjajId })
     </tr>
 }
 
