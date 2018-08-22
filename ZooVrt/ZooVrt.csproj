@@ -261,6 +261,7 @@
     <Content Include="Areas\Radnik\Views\Shared\_CreateButtonPartial.cshtml" />
     <Content Include="Areas\Radnik\Views\Shared\_SmallButtonPartial.cshtml" />
     <Content Include="Areas\Radnik\Views\Shared\_TableButtonsPartial.cshtml" />
+<<<<<<< HEAD
     <Content Include="Areas\Radnik\Views\Rezervacija\Index.cshtml" />
     <Content Include="Areas\Radnik\Views\Rezervacija\Details.cshtml" />
     <Content Include="Areas\Radnik\Views\Termin\Index.cshtml" />
@@ -269,6 +270,10 @@
     <Content Include="Areas\Radnik\Views\Termin\Delete.cshtml" />
     <Content Include="Areas\Radnik\Views\Termin\Create.cshtml" />
     <Content Include="Areas\Radnik\Views\Shared\_DetailsButtonPartial.cshtml" />
+=======
+    <Content Include="Areas\Korisnik\Views\Shared\_DetaljiODogadjajuPartial.cshtml" />
+    <Content Include="Areas\Korisnik\Views\Shared\_NapraviRezervacijuPartial.cshtml" />
+>>>>>>> 6a6f013b89bace1c2ed7f92d263c9247c470a8e3
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
