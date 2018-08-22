@@ -4,7 +4,9 @@
     ViewBag.Title = "Edit";
 }
 
-<h2>Edit</h2>
+<br />
+<h2>Izmeni</h2>
+<br />
 
 @using (Html.BeginForm())
 {
@@ -49,5 +51,5 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.Partial("_BackToListButtonPartial")
 </div>

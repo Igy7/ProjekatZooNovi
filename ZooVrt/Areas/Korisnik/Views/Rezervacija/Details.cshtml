@@ -4,7 +4,9 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<br />
+<h2><b>Detalji o rezervaciji</b></h2>
+<br />
 
 <div>
     <h4>Rezervacija</h4>
@@ -45,6 +47,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.rezervacijaID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.Partial("_EditButtonPartial", Model.rezervacijaID )
+    @Html.Partial("_BackToListButtonPartial")
 </p>
