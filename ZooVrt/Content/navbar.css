@@ -1,0 +1,10 @@
+﻿.navbar-nav > li > a {
+    margin-top: 25px;
+    padding-top: 15px;
+    max-height: 30px;
+}
+
+
+.body-content {
+    margin-top: 40px;
+}

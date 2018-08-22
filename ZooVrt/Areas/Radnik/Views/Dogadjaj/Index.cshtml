@@ -5,8 +5,10 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
-
+<br />
+<br />
+<h2><b>Dogadjaji</b></h2>
+<br />
 <p>
     @Html.Partial("_CreateButtonPartial")
 </p>
@@ -14,15 +16,15 @@
 <table class="table table-striped">
     <tr class="success">
         <th>
-            @Html.DisplayNameFor(model => model.naziv)
+            Naziv dogadjaja
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.datum)
+            Datum odrzavanja
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.cenaKarte)
+            Cena karte
         </th>
-        <th></th>
+        <th></th> 
     </tr>
 
 @foreach (var item in Model)

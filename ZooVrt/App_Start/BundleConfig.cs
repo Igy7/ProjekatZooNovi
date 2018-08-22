@@ -30,6 +30,9 @@ namespace ZooVrt
                       "~/Scripts/RadnikMenu.js"));
             bundles.Add(new ScriptBundle("~/bundles/korisnik").Include(
           "~/Scripts/KorisnikMenu.js"));
+
+            bundles.Add(new StyleBundle("~/Content/ZooVrt").Include(
+          "~/Content/navbar.css"));
         }
     }
 }
