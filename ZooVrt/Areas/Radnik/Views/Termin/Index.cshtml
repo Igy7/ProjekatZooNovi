@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<ZooVrt.Entities.Termin>
+@using ZooVrt.Areas.Radnik.Models;
 
 @{
     ViewBag.Title = "Index";
@@ -7,18 +8,19 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.Partial("_CreateButtonPartial")
 </p>
-<table class="table">
-    <tr>
+
+<table class="table table-striped">
+    <tr class="success">
         <th>
-            @Html.DisplayNameFor(model => model.vremePocetka)
+            Vreme pocetka
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.vremeKraja)
+            Vreme kraja
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.brKarata)
+            Broj karata
         </th>
         <th></th>
     </tr>
@@ -33,12 +35,8 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.brKarata)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.terminID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.terminID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.terminID })
-        </td>
+        </td>       
+            @Html.Partial("_TableButtonsPartial", new SmallButtonModel { terminId = item.terminID })
     </tr>
 }
 
