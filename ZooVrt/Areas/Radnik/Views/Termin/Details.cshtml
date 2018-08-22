@@ -7,11 +7,11 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Termin</h4>
+    <h4>Dogadjaj</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.vremePocetka)
+            Vreme pocetka:
         </dt>
 
         <dd>
@@ -19,7 +19,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.vremeKraja)
+            Vreme kraja:
         </dt>
 
         <dd>
@@ -27,7 +27,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.brKarata)
+            Broj karata:
         </dt>
 
         <dd>
@@ -37,6 +37,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.terminID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.Partial("_EditButtonPartial", Model.terminID)
+    @Html.Partial("_BackToListButtonPartial")
 </p>

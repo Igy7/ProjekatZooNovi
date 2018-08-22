@@ -244,16 +244,6 @@
     <Content Include="Areas\Radnik\Views\Dogadjaj\Details.cshtml" />
     <Content Include="Areas\Radnik\Views\Dogadjaj\Edit.cshtml" />
     <Content Include="Areas\Radnik\Views\Dogadjaj\Index.cshtml" />
-    <Content Include="Areas\Radnik\Views\Termin\Create.cshtml" />
-    <Content Include="Areas\Radnik\Views\Termin\Delete.cshtml" />
-    <Content Include="Areas\Radnik\Views\Termin\Details.cshtml" />
-    <Content Include="Areas\Radnik\Views\Termin\Edit.cshtml" />
-    <Content Include="Areas\Radnik\Views\Termin\Index.cshtml" />
-    <Content Include="Areas\Radnik\Views\Rezervacija\Create.cshtml" />
-    <Content Include="Areas\Radnik\Views\Rezervacija\Delete.cshtml" />
-    <Content Include="Areas\Radnik\Views\Rezervacija\Details.cshtml" />
-    <Content Include="Areas\Radnik\Views\Rezervacija\Edit.cshtml" />
-    <Content Include="Areas\Radnik\Views\Rezervacija\Index.cshtml" />
     <Content Include="Areas\Radnik\Views\Shared\_BackToListButtonPartial.cshtml" />
     <Content Include="Areas\Korisnik\Views\web.config" />
     <Content Include="Areas\Korisnik\Views\_ViewStart.cshtml" />
@@ -272,12 +262,26 @@
     <Content Include="Areas\Radnik\Views\Shared\_CreateButtonPartial.cshtml" />
     <Content Include="Areas\Radnik\Views\Shared\_SmallButtonPartial.cshtml" />
     <Content Include="Areas\Radnik\Views\Shared\_TableButtonsPartial.cshtml" />
+<<<<<<< HEAD
+    <Content Include="Areas\Radnik\Views\Rezervacija\Index.cshtml" />
+    <Content Include="Areas\Radnik\Views\Rezervacija\Details.cshtml" />
+    <Content Include="Areas\Radnik\Views\Termin\Index.cshtml" />
+    <Content Include="Areas\Radnik\Views\Termin\Edit.cshtml" />
+    <Content Include="Areas\Radnik\Views\Termin\Details.cshtml" />
+    <Content Include="Areas\Radnik\Views\Termin\Delete.cshtml" />
+    <Content Include="Areas\Radnik\Views\Termin\Create.cshtml" />
+    <Content Include="Areas\Radnik\Views\Shared\_DetailsButtonPartial.cshtml" />
+=======
     <Content Include="Areas\Korisnik\Views\Shared\_DetaljiODogadjajuPartial.cshtml" />
     <Content Include="Areas\Korisnik\Views\Shared\_NapraviRezervacijuPartial.cshtml" />
+<<<<<<< HEAD
     <Content Include="Areas\Korisnik\Views\Shared\_BackToListButtonPartial.cshtml" />
     <Content Include="Areas\Korisnik\Views\Shared\_EditButtonPartial.cshtml" />
     <Content Include="Areas\Korisnik\Views\Shared\_SmallButtonPartial.cshtml" />
     <Content Include="Areas\Korisnik\Views\Shared\_TableButtonsPartial.cshtml" />
+=======
+>>>>>>> 6a6f013b89bace1c2ed7f92d263c9247c470a8e3
+>>>>>>> 882b16a4696d09fcd8a067e3398ca519a9c184b2
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
