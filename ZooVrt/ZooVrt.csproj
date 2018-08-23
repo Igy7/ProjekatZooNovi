@@ -229,16 +229,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Logos\logo1.png" />
     <Content Include="Content\navbar.css" />
-<<<<<<< HEAD
     <Content Include="Content\RegisterUser.css" />
-=======
-    <Content Include="Content\Slike\1.jpg" />
-    <Content Include="Content\Slike\2.jpg" />
-    <Content Include="Content\Slike\3.jpg" />
-    <Content Include="Content\Slike\4.jpg" />
-    <Content Include="Content\Slike\5.jpg" />
-    <Content Include="Content\Slike\zoo-map.png" />
->>>>>>> af18776120113cee67da7cbd3d313dd347a98f8c
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
