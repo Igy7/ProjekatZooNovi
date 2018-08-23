@@ -12,6 +12,7 @@ using ZooVrt.Models;
 
 namespace ZooVrt.Areas.Radnik.Controllers
 {
+    [Authorize(Roles = "Radnik")]
     public class DogadjajController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();

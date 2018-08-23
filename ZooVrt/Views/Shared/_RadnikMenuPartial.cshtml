@@ -1,4 +1,6 @@
-﻿<li class="dropdown" data-radnik-menu>
+﻿@if (Request.IsAuthenticated && User.IsInRole("Radnik"))
+{
+<li class="dropdown" data-radnik-menu>
     <a href="#">
         Radnik
         <span class="glyphicon glyphicon-chevron-down"></span>
@@ -12,5 +14,11 @@
         <li class="dropdown-header">Posetioci</li>
         <li class="divider" />
         <li><a href="/Radnik/Rezervacija">&nbsp;&nbsp;Rezervacije</a></li>
+        <li class="divider" />
+        <li class="dropdown-header">Korisnici</li>
+        <li class="divider" />
+        <li><a href="/Account">&nbsp;&nbsp;Korisnici</a></li>
+
     </ul>
 </li>
+}
