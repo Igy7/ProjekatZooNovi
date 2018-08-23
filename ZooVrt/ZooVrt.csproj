@@ -226,6 +226,12 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Logos\logo1.png" />
     <Content Include="Content\navbar.css" />
+    <Content Include="Content\Slike\1.jpg" />
+    <Content Include="Content\Slike\2.jpg" />
+    <Content Include="Content\Slike\3.jpg" />
+    <Content Include="Content\Slike\4.jpg" />
+    <Content Include="Content\Slike\5.jpg" />
+    <Content Include="Content\Slike\zoo-map.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
